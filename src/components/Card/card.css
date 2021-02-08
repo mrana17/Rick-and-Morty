@@ -1,0 +1,41 @@
+.card {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  /* gap: 1rem; */
+  background-color: grey;
+  /* padding: 1rem; */
+  border-radius: 1rem;
+}
+
+.card__portrait {
+  /* width: 25vw; */
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-row-end: span5;
+  border-radius: 1rem;
+}
+
+.card__name {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  padding: 0 1rem;
+}
+
+.card__status {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  padding: 0 1rem;
+}
+
+.card__species {
+  grid-column-start: 2;
+  grid-row-start: 3;
+  padding: 0 1rem;
+}
+
+.card__origin {
+  grid-column-start: 2;
+  grid-row-start: 4;
+  padding: 0 1rem;
+}
