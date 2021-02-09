@@ -114,7 +114,7 @@ export const Alan = () =>
       },
     ];
   
-    const container = createElement("div", {
+    const container = createElement("article", {
       className: "container",
       childs: characters.map((character) => createCard(character)),
     });
