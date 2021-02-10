@@ -35,7 +35,7 @@ export const Summer = () =>
   });
 export const Beth = () =>
   createCard({
-    imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/4.jpeg",
     name: "Beth Smith",
     status: "Alive",
     species: "Human",
@@ -43,7 +43,7 @@ export const Beth = () =>
   });
 export const Jerry = () =>
   createCard({
-    imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/5.jpeg",
     name: "Jerry Smith",
     status: "Alive",
     species: "Human",
@@ -51,7 +51,7 @@ export const Jerry = () =>
   });
 export const Abadango = () =>
   createCard({
-    imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/6.jpeg",
     name: "Abadango Cluster Princess",
     status: "Alive",
     species: "Alien",
@@ -59,7 +59,7 @@ export const Abadango = () =>
   });
 export const Abradolf = () =>
   createCard({
-    imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/7.jpeg",
     name: "Abradolf Lincler",
     status: "unknown",
     species: "Human",
@@ -67,7 +67,7 @@ export const Abradolf = () =>
   });
 export const Adjudicator = () =>
   createCard({
-    imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/8.jpeg",
     name: "Adjudicator Rick",
     status: "Dead",
     species: "Human",
@@ -75,7 +75,7 @@ export const Adjudicator = () =>
   });
 export const Agency = () =>
   createCard({
-    imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/9.jpeg",
     name: "Agency Director",
     status: "Dead",
     species: "Human",
@@ -83,7 +83,7 @@ export const Agency = () =>
   });
 export const Alan = () =>
   createCard({
-    imgSrc: "https://rickandmortyapi.com/api/character/avatar/2.jpeg",
+    imgSrc: "https://rickandmortyapi.com/api/character/avatar/10.jpeg",
     name: "Alan Rails",
     status: "Dead",
     species: "Human",
@@ -123,10 +123,6 @@ export const Multiple = () => {
   return container;
 };
 
-// export const CharacterFromAPI = (args, { loaded: { character } }) => {
-//   return createCard(character);
-// };
-
 type CharacterFromAPIProps = {
   loaded: {
     character: Character;
@@ -145,8 +141,6 @@ CharacterFromAPI.loaders = [
     character: await getCharacter(666),
   }),
 ];
-
-// export const CharactersFromAPI = (args, { loaded: { characters } }) => {
 
 type CharactersFromAPIProps = {
   loaded: {
