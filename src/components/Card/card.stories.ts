@@ -2,6 +2,7 @@ import "./card.css";
 import { createCard } from "./card";
 import { createElement } from "../../utils/createElement";
 import { getCharacter } from "../../utils/api";
+import { getCharacters } from "../../utils/api";
 
 export default {
   title: "Components/Card.ts",
@@ -130,5 +131,19 @@ export const Alan = () =>
   CharacterFromAPI.loaders = [
     async () => ({
       character: await getCharacter(666),
+    }),
+  ];
+
+  export const CharactersFromAPI = (args, { loaded: { characters } }) => {
+    const container = createElement("div", {
+      className: "container",
+      childs: characters.map((character) => createCard(character)),
+    });
+    return container;
+  };
+  
+  CharactersFromAPI.loaders = [
+    async () => ({
+      characters: await getCharacters(),
     }),
   ];
